@@ -2,14 +2,11 @@
     <head>
     </head>
     <body>
-        <h1 id="titulo"><span>Hello</span> World!</h1>
-        <p>Aqui tem um parágrafo</p>
-        <p class="textoRoxo">Aqui tem um outro parágrafo</p>
-        <img src="http://pudim.com.br/pudim.jpg">
-        <ol class="textoRoxo">
-            <li>Aqui é o Primeiro item da lista</li>
-            <li>Aqui é o Segundo item da lista</li>
-        </ol>
+        <h1 id="titulo"><span>Hello</span></h1>
+        {% for entrada in entradas %}
+        <h2>{{entrada.titulo}</h2>
+        <p>{{entrada.texto}}</p>
+        {% enfor %}
 
     </body>
 </html>
